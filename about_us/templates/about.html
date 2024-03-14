@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{%block style %}
+    <link rel="stylesheet" href="{% static 'css/style_about.css'%}">
+{% endblock %}
+
+{%block content%}
+
+<section class="bg-dark-subtle">
+    <div class="d-md-flex align-items-center justify-content-around container">
+        <div class="col-md-5">
+            <h2>Our's Story</h2>
+            <p class="lead">Spice Hub is where culinary excellence meets warmth and hospitality. Step into our inviting space and embark on a journey through the vibrant flavors of India. From aromatic curries to tantalizing street food delights, every dish is crafted with passion and authenticity. Immerse yourself in the rich tapestry of Indian cuisine while our friendly staff ensures a memorable dining experience. Welcome to Spice Hub, where every meal is a celebration of taste and tradition.</p>
+        </div>
+        <img class="col-md-5 p-5" src="{% static '/img/owner.jpg' %}" alt="">
+    </div>
+</section>
+
+<section class="bg-secondary-subtle">
+    <div class="d-md-flex align-items-center justify-content-around container">
+        <div class="col-md-5 p-4">
+            <div class="d-flex ">
+                <img class="chef1 " src="{% static '/img/chef1.webp' %}" alt="">
+                <img class="chef2 " src="{% static '/img/chef3.jpg' %}" alt="">
+            </div>
+            <div class="d-flex ">
+                <img class="chef3 " src="{% static '/img/chef2.jpg' %}" alt="">
+                <img class="chef4 " src="{% static '/img/chef4.avif' %}" alt="">
+            </div>
+        </div>
+        <div class="col-md-5">
+            <h2>Behind the Flavors: Our Culinary Artist</h2>
+            <p class="lead text">Our talented culinary team comprises passionate individuals who bring diverse expertise and creativity to the kitchen. With a shared commitment to excellence, our chefs blend traditional techniques with innovative flair to craft dishes that captivate the palate. Each member of our team brings a unique perspective and skill set, contributing to the rich tapestry of flavors that define our cuisine. Together, they work seamlessly to deliver exceptional dining experiences, ensuring every plate reflects our dedication to culinary excellence.</p>
+        </div>
+        
+    </div>
+</section>
+
+<section class="bg-dark">
+    <div class="fs-3 d-flex align-items-center justify-content-center py-3 text-white container">
+        <i class="fa-brands fa-facebook mx-4"></i>
+        <i class="fa-brands fa-whatsapp mx-4"></i>
+        <i class="fa-brands fa-twitter mx-4"></i>
+        <i class="fa-brands fa-instagram mx-4"></i>
+    </div>
+</section>
+{% endblock %}

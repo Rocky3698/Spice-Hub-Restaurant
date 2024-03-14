@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block style%}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+
+{%block content%}
+<section class="container d-flex align-items-center justify-content-center mt-md-5 pt-md-5"> 
+
+    <div class="row align-items-center justify-content-between mt-md-5">
+
+        <div class="col-md-6">
+            <h1 class="heading">Discover Exceptional <span class="text-primary">Flavor</span></h1>
+            <h3>Your Journey Begins at <span class="fw-bold fs-2 text-danger">Spice <span class="bg-warning rounded-1 text-dark" > Hub </span> </span></h3>
+            <p class="lead fw-medium">At Spice Hub, enjoy the authentic flavors of Bangladesh in a welcoming ambiance. From flavorful curries to traditional street food, each dish reflects our commitment to quality and heritage.</p>
+            <a href="{% url 'meals'%}"><button class="btn btn-lg btn-danger fs-2 fw-medium">Order Now</button></a>
+        </div>
+        <img src="{% static 'img/Cooking-bro.svg' %}" alt="Img" class="col-md-6 mt-5 mt-md-0">
+
+    </div>
+</section>
+{%endblock%}
